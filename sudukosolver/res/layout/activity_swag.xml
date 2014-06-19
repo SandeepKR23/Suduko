@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="7"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="3"
+        android:orientation="horizontal" >
+
+        <Button
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:onClick="solve"
+            android:text="Solve"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:onClick="hint"
+            android:text="Hint"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:onClick="clear"
+            android:text="Clear"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <Button
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:gravity="bottom|center"
+            android:onClick="exit"
+            android:text="Exit"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>
